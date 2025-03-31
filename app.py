@@ -13,6 +13,8 @@ LOG_FILE = 'log.txt'
 MEDICINES = {
     'morning_magnesium': 'Morning Magnesium',
     'morning_flonase': 'Morning Flonase',
+    'morning_psylium_husk': 'Morning Psylium Husk',
+    'mornig_protein': 'Morning Protein',
     'evening_magnesium': 'Evening Magnesium'
 }
 
@@ -143,7 +145,7 @@ def reset_today():
 
 if __name__ == '__main__':
     print("Starting Medicine Tracker server...")
-    print("Access it at http://127.0.0.1:5000/ or http://[your-ip-address]:5000/")
+    print("Access it at http://127.0.0.1:5001/ or http://[your-ip-address]:5001/")
     # Use host='0.0.0.0' to make it accessible on your network
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=5001, debug=False)
     # Turn debug=False for regular use, True for development
